@@ -1,13 +1,14 @@
 
 // valor raiz
 
-function vvalorResultado ( ) {
+function valorResultado ( ) {
 
- let  raiz =   (document.getElementById("digiteseuvalorraiz").value)
+ let  raiz =   document.getElementById("digiteseuvalorraiz").value
 
-  
-     document.getElementById("resultadodaraiz ").value = raiz + Math.sqrt( )
-    
+ const raiz2 = Math.sqrt( raiz )
+
+     document.getElementById("resultadodaraiz ").value = raiz2 
+     
 }
 
 
