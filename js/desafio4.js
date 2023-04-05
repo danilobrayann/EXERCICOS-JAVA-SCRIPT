@@ -1,13 +1,14 @@
 
 
-
+// quando eu clicar em inicio o valor aparecer e o resultado e tudo que tiver na minha funcção
 function start() {
     let valor1 = parseInt(document.getElementById("numero1").value)
     let valor2 = parseInt(document.getElementById("numero2").value)
-    valor1 === valor2
+    
+    if (valor1 === valor2){
     document.getElementById("textoDoResultado").value = "iguais"
-
-    if (valor1 !== valor2) {
+}
+    else if (valor1 !== valor2) {
 
         document.getElementById("textoDoResultado").value = "diferente"
     }
