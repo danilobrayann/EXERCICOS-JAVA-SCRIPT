@@ -1,17 +1,20 @@
 
 // valor raiz
 
-function valorResultado ( ) {
+function valorResultado() {
+    let raiz = parseInt(document.getElementById("digiteseuvalorraiz").value);
+  
+    if (!isNaN(raiz) && raiz >= 0) {
+      document.getElementById("resultadodaraiz").value = Math.sqrt(raiz);
+    }
+  }
 
- let  raiz =   document.getElementById("digiteseuvalorraiz").value
+  function valorReset() {
 
- const raiz2 = Math.sqrt( raiz )
-
-     document.getElementById("resultadodaraiz ").value = raiz2 
-     
-}
-
-
+    document.getElementById("digiteseuvalorraiz").value = ""
+    document.getElementById("resultadodaraiz").value = ""
+    
+  }
 
 
 
